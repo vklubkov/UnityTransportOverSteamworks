@@ -1,11 +1,17 @@
 {
   "name": "com.vklubkov.transportoversteamworks",
-  "version": "1.0.2",
-  "displayName": "Network Transport Over Steamworks",
+  "version": "1.1.0",
   "unity": "6000.3",
+  "displayName": "Transport Over Steamworks for Unity Netcode",
+  "description": "Network Transport for <b><a href=\"https://docs.unity3d.com/Packages/com.unity.netcode@latest/\">Unity Netcode</a></b> (a.k.a. \"Netcode for Entities\") implemented using <a href=\"https://partner.steamgames.com/doc/sdk\">Steamworks SDK</a> (<i><a href=\"https://partner.steamgames.com/doc/api/ISteamNetworkingSockets\">ISteamNetworkingSockets</a></i>).\n\n- Created specifically for use with <b>Unity Netcode</b>.\n- Tested with <a href=\"https://github.com/rlabrecque/steamworks.net\">Steamworks.NET</a>.\n- Supports <b>P2P</b>, <b>Fake IP</b>, and <b>real IP</b> connections. Servers/hosts can have all three types of listen sockets at the same time.\n- Conversion between Steamworks messages <-> Unity Transport packets is done via <b>bursted jobs</b>.\n\n<b>This package only handles the data transfer over Steamworks. It doesn't initialize Steamworks, doesn't initialize Unity Netcode, doesn't handle matchmaking, doesn't initiate connections, doesn't start sockets etc.</b>\n\n<b>It also doesn't bundle Steamworks.NET or the Steamworks SDK DLL.</b>",
+  "license": "MIT",
+  "licensesUrl": "https://github.com/vklubkov/UnityTransportOverSteamworks?tab=MIT-1-ov-file",
+  "changelogUrl": "https://github.com/vklubkov/UnityTransportOverSteamworks/releases",
+  "documentationUrl": "https://github.com/vklubkov/UnityTransportOverSteamworks",
   "author": {
     "name": "Vladimir Klubkov",
-    "email": "vladimir.gamedev@gmail.com"
+    "email": "vladimir.gamedev@gmail.com",
+    "url": "https://github.com/vklubkov"
   },
   "dependencies": {
     "com.unity.burst": "1.8.29",
